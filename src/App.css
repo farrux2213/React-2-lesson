@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 body {
   margin: 0%;
   padding: 0%;
@@ -10,18 +12,73 @@ body {
   position: relative;
   background-color: bisque;
 }
-.headLeft {
-  /* width:; */
-  background-color: blueviolet;
+/* ?????????????????????? */
+.followers {
+  width: 60%;
+  height: 250px;
+  margin: auto;
 }
-.headRight {
-  width: 1204px;
-  height: 1204px;
-  top: -286px;
-  left: 540px;
-  gap: 0px;
-  opacity: 0px;
-  position: relative; /* Bu o'zgartirish */
-  background-color: #263959;
-  border-radius: 100%;
+.followers-top h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 42.54px;
+  font-weight: 600;
+  line-height: 51.48px;
+  text-align: center;
+}
+.followers-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.K-plus-1 h1,
+.K-plus-2 h1,
+.K-plus-3 h1,
+.K-plus-4 h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 31.91px;
+  font-weight: 500;
+  line-height: 38.62px;
+  text-align: center;
+  /* align-items: center; */
+}
+.K-plus-1 p,
+.K-plus-2 p,
+.K-plus-3 p,
+.K-plus-4 p {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+}
+/* end followers area  */
+.six-box {
+  width: 80%;
+  height: 1080px;
+  margin: auto;
+  position: relative;
+  top: 90px;
+  background-color: #002fea;
+}
+.all-six-box {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  margin: auto;
+  position: relative;
+  top: 120px;
+  width: 80%;
+  height: 80%;
+  background-color: black;
+}
+.first-series {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+}
+.first-series-1 {
+  width: 50%;
+  height: 260px;
+  position: relative;
+  background-color: bisque;
 }

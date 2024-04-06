@@ -58,27 +58,179 @@ body {
   margin: auto;
   position: relative;
   top: 90px;
-  background-color: #002fea;
+  background-color: #fafbff;
 }
 .all-six-box {
   display: flex;
-  /* flex-direction: column; */
-  gap: 20px;
+  flex-direction: column;
+  gap: 40px;
   margin: auto;
   position: relative;
   top: 120px;
   width: 80%;
   height: 80%;
-  background-color: black;
 }
 .first-series {
+  width: 100%;
+  height: 33%;
   display: flex;
-  gap: 20px;
-  position: absolute;
+  gap: 30px;
 }
 .first-series-1 {
   width: 50%;
-  height: 260px;
-  position: relative;
-  background-color: bisque;
+  height: 100%;
 }
+.first-series-2 {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.second-series {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  gap: 30px;
+}
+.second-series-1 {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.second-series-2 {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.third-series {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  gap: 30px;
+}
+.third-series-1 {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.third-series-2 {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.sunicon {
+  width: 40px;
+  height: 40px;
+  background-color: #41f5c0;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.insunicon {
+  margin-left: 11px;
+  margin-top: 11px;
+}
+.first-series-2 h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 23.94px;
+  font-weight: 500;
+  line-height: 35.91px;
+  text-align: left;
+  margin-left: 40px;
+}
+.first-series-2 p {
+  width: 325px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  margin-left: 40px;
+}
+.sixline {
+  position: absolute;
+  left: 480px;
+  top: 270px;
+}
+.second-series-2 h2,
+.second-series-1 h2,
+.third-series-2 h2,
+.third-series-1 h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 23.94px;
+  font-weight: 500;
+  line-height: 35.91px;
+  text-align: left;
+  margin-left: 40px;
+}
+.second-series-2 p,
+.second-series-1 p,
+.third-series-2 p,
+.third-series-1 p {
+  width: 325px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  margin-left: 40px;
+}
+.staricon {
+  margin-left: 11px;
+  margin-top: 11px;
+}
+.sixline2 {
+  position: absolute;
+  top: 566px;
+}
+.sixline3 {
+  position: absolute;
+  top: 566px;
+  left: 480px;
+}
+.unvonicon {
+  margin-left: 14.5px;
+  margin-top: 12.7px;
+}
+.searchicon {
+  margin-left: 11px;
+  margin-top: 11px;
+}
+.bagicon {
+  margin-left: 11px;
+  margin-top: 11px;
+}
+.sixline4 {
+  position: absolute;
+  top: 860px;
+}
+.sixline5 {
+  position: absolute;
+  top: 860px;
+  left: 480px;
+}
+.first-series-1 h1 {
+  font-family: "Inter", sans-serif;
+  width: 367px;
+  font-size: 42.54px;
+  font-weight: 600;
+  line-height: 51.48px;
+  margin-left: 40px;
+}
+.first-series-1 button {
+  width: 142px;
+  height: 49px;
+  background-color: #0c1523;
+  border-radius: 9px;
+  margin-left: 40px;
+}
+.button-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: white;
+}
+/* end six box area  */

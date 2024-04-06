@@ -234,3 +234,97 @@ body {
   color: white;
 }
 /* end six box area  */
+.market {
+  width: 80%;
+  height: 990px;
+  margin: auto;
+  position: relative;
+  top: 200px;
+  border: 1px solid #fcf5ff;
+}
+.market h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 42.54px;
+  font-weight: 600;
+  line-height: 51.48px;
+  text-align: center;
+}
+.market p {
+  font-family: "Inter", sans-serif;
+  width: 538px;
+  height: 54px;
+  margin-left: 320px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+.marketboxex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 720px;
+  margin-top: 100px;
+}
+.birinchi-qator {
+  display: flex;
+  width: 100%;
+  height: 363px;
+}
+.ikkinchi-qator {
+  display: flex;
+  width: 100%;
+  height: 363px;
+}
+.marketboxex1 {
+  width: 33.3%;
+  height: 100%;
+  background-color: #baadc0;
+  opacity: 5%;
+}
+.marketboxex2 {
+  width: 33.3%;
+  height: 100%;
+  border: 1px solid #fcf5ff;
+  border-radius: 5px;
+}
+
+.marketboxex3 {
+  width: 33.4%;
+  height: 100%;
+  background-color: #baadc0;
+  opacity: 5%;
+}
+.marketboxex4 {
+  width: 33.4%;
+  height: 100%;
+  border: 1px solid #fcf5ff;
+  border-radius: 5px;
+}
+.marketboxex5 {
+  width: 33.3%;
+  height: 100%;
+  background-color: #baadc0;
+  opacity: 5%;
+}
+.marketboxex6 {
+  width: 33.3%;
+  height: 100%;
+  border: 1px solid #fcf5ff;
+  border-radius: 5px;
+}
+.belgi1 {
+  width: 70px;
+  height: 70px;
+  background-color: #263959;
+}
+.boldtext1 b {
+  font-family: "Inter", sans-serif;
+  width: 234px;
+  font-size: 31.91px;
+  font-weight: 500;
+  line-height: 38.62px;
+  text-align: center;
+  color: black;
+  opacity: 1;
+}

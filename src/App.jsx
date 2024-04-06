@@ -94,6 +94,53 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="market">
+        <h1>Explore The Marketplace</h1>
+        <p>
+          Find the perfect freelance services for your business · Popular
+          professional services ·
+        </p>
+        <div className="marketboxex">
+          <div className="birinchi-qator">
+            <div className="marketboxex1">
+              <div className="belgi1"></div>
+              <div className="boldtext1">
+                <b>Graphic Design</b>
+              </div>
+              <div>
+                <h4>1k Jobs Available</h4>
+              </div>
+            </div>
+            <div className="marketboxex2">
+              {/* <div></div>
+            <h2>UI Designer</h2>
+            <p>5k Jobs Available</p> */}
+            </div>
+            <div className="marketboxex3">
+              {/* <div></div>
+            <h2>UX Designer</h2>
+            <p>7k Jobs Available</p> */}
+            </div>
+          </div>
+          <div className="ikkinchi-qator">
+            <div className="marketboxex4">
+              {/* <div></div>
+            <h2>Content Writing</h2>
+            <p>500 Jobs Available</p> */}
+            </div>
+            <div className="marketboxex5">
+              {/* <div></div>
+            <h2>Digital Marketing</h2>
+            <p>2k Jobs Available</p> */}
+            </div>
+            <div className="marketboxex6">
+              {/* <div></div>
+            <h2>SEO</h2>
+            <p>1.5k Jobs Available</p> */}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

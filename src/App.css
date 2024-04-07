@@ -327,4 +327,5 @@ body {
   text-align: center;
   color: black;
   opacity: 1;
+  border: 1px solid red;
 }

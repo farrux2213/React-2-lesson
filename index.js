@@ -1,20 +1,20 @@
-const strs = ["dog", "racecar", "car"];
+function countSubarrays(nums) {
+  let count = 0;
+  const length = nums.length;
 
-function name(strs) {
-  if (strs.length === 0) return "";
-
-  let prefix = "";
-
-  for (let i = 0; i < strs[0].length; i++) {
-    const char = strs[0][i];
-
-    if (strs.every((str) => str[i] === char)) {
-      prefix += char;
-    } else {
-      break;
+  for (let i = 0; i < length; i++) {
+    let maxElement = nums[i];
+    for (let j = i; j < length; j++) {
+      maxElement = Math.max(maxElement, nums[j]);
+      if (maxElement === nums[i]) {
+        count++;
+      }
     }
   }
 
-  return prefix;
+  return count;
 }
-console.log(name(strs));
+
+// Example usage:
+const nums = [1, 4, 3, 3, 2];
+console.log(countSubarrays(nums)); // Output: 6

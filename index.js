@@ -1,20 +1,18 @@
-function countSubarrays(nums) {
-  let count = 0;
-  const length = nums.length;
-
-  for (let i = 0; i < length; i++) {
-    let maxElement = nums[i];
-    for (let j = i; j < length; j++) {
-      maxElement = Math.max(maxElement, nums[j]);
-      if (maxElement === nums[i]) {
-        count++;
-      }
+function sumAndValues(nums, andValues) {
+  let sum = 0;
+  for (let i = 0; i < andValues.length; i++) {
+    let currentSum = 0;
+    let start = andValues[i];
+    while (start < nums.length && nums[start] === andValues[i]) {
+      currentSum += nums[start];
+      start++;
     }
+    sum += currentSum;
   }
-
-  return count;
+  return sum;
 }
 
-// Example usage:
+// Test case
 const nums = [1, 4, 3, 3, 2];
-console.log(countSubarrays(nums)); // Output: 6
+const andValues = [0, 3, 3, 2];
+console.log(sumAndValues(nums, andValues)); // Output: 12

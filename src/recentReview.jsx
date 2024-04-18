@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import yellowStar from "./assets/yellowStar.png";
 
 const RecentReview = (props) => {

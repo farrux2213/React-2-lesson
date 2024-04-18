@@ -1,148 +1,242 @@
 import "./App.css";
-import insunicon from "/insunicon.svg";
-import sixline from "/sixline.svg";
-import staricon from "/staricon.svg";
-import unvonicon from "/unvonicon.svg";
-import searchicon from "/searchicon.svg";
-import bagicon from "/bagicon.svg";
+import FlowerCard from "./flowerCard.jsx";
+import MarketPlace from "./marketPlace.jsx";
+import RecentReview from "./recentReview.jsx";
 
-function App() {
+// Images
+import rightimg from "./assets/rightimg.png";
+import avatarImg from "./assets/avatarimg.png";
+import star from "./assets/star.png";
+import freestar from "./assets/freestar.png";
+import facebook from "./assets/facebook.png";
+import instagram from "./assets/instagram.png";
+import snapchat from "./assets/snapchat.png";
+import twitter from "./assets/twitter.png";
+import stack from "./assets/stack.png";
+import Insta from "./assets/Insta.png";
+import drib from "./assets/drib.png";
+import behance from "./assets/behance.png";
+import male from "./assets/male.png";
+import female from "./assets/female.png";
+import singer from "./assets/singer.png";
+
+// Feature Icons
+import graphic from "./assets/graphic.png";
+import marketing from "./assets/marketing.png";
+import portfolio from "./assets/portfolio.png";
+import search from "./assets/search.png";
+import seo from "./assets/seo.png";
+import social from "./assets/social.png";
+import talent from "./assets/talent.png";
+import ui from "./assets/ui.png";
+import ux from "./assets/ux.png";
+import writing from "./assets/writing.png";
+import greenStar from "./assets/greenStar.png";
+
+// Footer Icons
+import footertwit from "./assets/Footertwit.png";
+import footerinsta from "./assets/Footerinsta.png";
+import footerfacebook from "./assets/Footerfacebook.png";
+import copyright from "./assets/copyright.png";
+
+const App = () => {
   return (
-    <>
-      <div className="head">
-        <div className="headLeft"></div>
-        <div className="headRight"></div>
+    <div className="container">
+      <div className="bgIcons">
+        <img className="mainImg" src={rightimg} alt="" />
+        <img className="star1" src={star} alt="" />
+        <img className="star2" src={star} alt="" />
+        <img className="star3" src={star} alt="" />
+        <img className="star4" src={star} alt="" />
+        <img className="freestar1" src={freestar} alt="" />
+        <img className="freestar2" src={freestar} alt="" />
+        <img className="freestar3" src={freestar} alt="" />
+        <img className="freestar4" src={freestar} alt="" />
+        <img className="freestar5" src={freestar} alt="" />
+        <img className="avatarImg" src={avatarImg} alt="" />
+        <img className="facebook" src={facebook} alt="" />
+        <img className="instagram" src={instagram} alt="" />
+        <img className="snapchat" src={snapchat} alt="" />
+        <img className="twitter" src={twitter} alt="" />
+        <img className="stack" src={stack} alt="" />
+        <img className="drib" src={drib} alt="" />
+        <img className="Insta" src={Insta} alt="" />
+        <img className="behance" src={behance} alt="" />
       </div>
-      <div className="followers">
-        <div className="followers-top">
-          <h1>Check This Before Hiring Anyone</h1>
-        </div>
-        <div className="followers-bottom">
-          <div className="K-plus-1">
-            <h1>150K+</h1>
-            <p>Freelance Worker</p>
-          </div>
-          <div className="K-plus-2">
-            <h1>7K+</h1>
-            <p>Professional Clients</p>
-          </div>
-          <div className="K-plus-3">
-            <h1>8K+</h1>
-            <p>Engineering Expart</p>
-          </div>
-          <div className="K-plus-4">
-            <h1>2K+</h1>
-            <p>Top Companies</p>
-          </div>
-        </div>
-      </div>
-      <div className="six-box">
-        <div className="all-six-box">
-          <div className="first-series">
-            <div className="first-series-1">
-              <h1>Our Features To Find Talent</h1>
-              <button>
-                <p className="button-p">Try For Free</p>
-              </button>
+      <div className="navBox genNav">
+        <div className="navBar">
+          <div className="leftNav genNav">
+            <div className="logoBox genNav">
+              <div className="logo genNav">M</div>
+              <p className="logoName">Murad</p>
             </div>
-            <div className="first-series-2">
-              <div className="sunicon">
-                <img src={insunicon} className="insunicon" />
-              </div>
-              <h2>Strong Social Proof</h2>
-              <p>Impress your boss with a professional in UI design.</p>
+            <div className="navHome genNav">
+              <p className="home">Home</p>
+              <p className="Features">Features</p>
             </div>
-            <img src={sixline} className="sixline" />
           </div>
-          <div className="second-series">
-            <div className="second-series-1">
-              <div className="sunicon">
-                <img src={staricon} className="staricon" />
-              </div>
-              <h2>Collected Review</h2>
-              <p>Impress your boss with a professional in UI design.</p>
+          <div className="rightNav genNav">
+            <div className="genNav">
+              <p className="Login">Login</p>
             </div>
-            <img src={sixline} className="sixline2" />
-
-            <div className="second-series-2">
-              <div className="sunicon">
-                <img src={unvonicon} className="unvonicon" />
-              </div>
-              <h2>Top Rated Telent</h2>
-              <p>Impress your boss with a professional in UI design.</p>
+            <div className="AccountBox genNav">
+              <p className="createAcc">Create Account</p>
             </div>
-            <img src={sixline} className="sixline3" />
-          </div>
-          <div className="third-series">
-            <div className="third-series-1">
-              <div className="sunicon">
-                <img src={searchicon} className="searchicon" />
-              </div>
-              <h2>Find Out Project</h2>
-              <p>Impress your boss with a professional in UI design.</p>
-            </div>
-            <img src={sixline} className="sixline4" />
-
-            <div className="third-series-2">
-              <div className="sunicon">
-                <img src={bagicon} className="bagicon" />
-              </div>
-              <h2>Portfolio Creator</h2>
-              <p>Impress your boss with a professional in UI design.</p>
-            </div>
-            <img src={sixline} className="sixline5" />
           </div>
         </div>
       </div>
-      <div className="market">
-        <h1>Explore The Marketplace</h1>
-        <p>
+      <div className="heroBox">
+        <p className="hiringSmart">Hiring Smarter With Better</p>
+        <h1 className="reviews">Reviews</h1>
+        <p className="heroDescription">
+          It’s free and easy to use online review platform.
+        </p>
+        <div className="buttonBox">
+          <div className="AccountBox genNav">
+            <p className="createAcc">Create Account</p>
+          </div>
+          <p className="learnMore">Learn More</p>
+        </div>
+      </div>
+      <div className="statistics genNav">
+        <h1 className="genTitle">Check This Before Hiring Anyone</h1>
+        <div className="mainStatsBox">
+          <div className="statsBox genNav">
+            <p className="statsInNumbers">150K+</p>
+            <p className="statsTitle">Freelance Worker</p>
+          </div>
+          <div className="statsBox genNav">
+            <p className="statsInNumbers">7K+</p>
+            <p className="statsTitle">Professional Clients</p>
+          </div>
+          <div className="statsBox genNav">
+            <p className="statsInNumbers">8K+</p>
+            <p className="statsTitle">Engineering Expart</p>
+          </div>
+          <div className="statsBox genNav">
+            <p className="statsInNumbers">2K+</p>
+            <p className="statsTitle">Top Companies</p>
+          </div>
+        </div>
+      </div>
+      <div className="ourFeaturesBox">
+        <div className="ourFeatures">
+          <div className="column1">
+            <h1 className="findTalent genTitle">Our Features To Find Talent</h1>
+            <div className="trybutton genNav">
+              <p className="tryforFree">Try For Free</p>
+            </div>
+            <FlowerCard
+              img={greenStar}
+              title="Collected Review"
+              description="Impress your boss with a professional in UI design."
+            />
+            <FlowerCard
+              img={search}
+              title="Find Out Project"
+              description="Impress your boss with a professional in UI design."
+            />
+          </div>
+          <div className="column2">
+            <FlowerCard
+              img={search}
+              title="Find Out Project"
+              description="Impress your boss with a professional in UI design."
+            />
+            <FlowerCard
+              img={search}
+              title="Find Out Project"
+              description="Impress your boss with a professional in UI design."
+            />
+            <FlowerCard
+              img={search}
+              title="Find Out Project"
+              description="Impress your boss with a professional in UI design."
+            />
+          </div>
+        </div>
+      </div>
+      <div className="marketplace">
+        <h1 className="genTitle">Explore The Marketplace</h1>
+        <p className="marketplaceDescript">
           Find the perfect freelance services for your business · Popular
           professional services ·
         </p>
-        <div className="marketboxex">
-          <div className="birinchi-qator">
-            <div className="marketboxex1">
-              <div className="belgi1"></div>
-              <div className="boldtext1">
-                <b>Graphic Design</b>
-              </div>
-              <div>
-                <h4>1k Jobs Available</h4>
-              </div>
-            </div>
-            <div className="marketboxex2">
-              {/* <div></div>
-            <h2>UI Designer</h2>
-            <p>5k Jobs Available</p> */}
-            </div>
-            <div className="marketboxex3">
-              {/* <div></div>
-            <h2>UX Designer</h2>
-            <p>7k Jobs Available</p> */}
-            </div>
-          </div>
-          <div className="ikkinchi-qator">
-            <div className="marketboxex4">
-              {/* <div></div>
-            <h2>Content Writing</h2>
-            <p>500 Jobs Available</p> */}
-            </div>
-            <div className="marketboxex5">
-              {/* <div></div>
-            <h2>Digital Marketing</h2>
-            <p>2k Jobs Available</p> */}
-            </div>
-            <div className="marketboxex6">
-              {/* <div></div>
-            <h2>SEO</h2>
-            <p>1.5k Jobs Available</p> */}
-            </div>
+        <div className="row1">
+          <MarketPlace
+            img={graphic}
+            jobTitle="Graphic Design"
+            jobDetail="1k Jobs Available"
+          />
+          <MarketPlace
+            img={ui}
+            jobTitle="UI Designer"
+            jobDetail="5k Jobs Available"
+          />
+          <MarketPlace
+            img={ux}
+            jobTitle="UX Designer"
+            jobDetail="7k Jobs Available"
+          />
+        </div>
+        <div className="row2">
+          <MarketPlace
+            img={writing}
+            jobTitle="Content Writing"
+            jobDetail="500 Jobs Available"
+          />
+          <MarketPlace
+            img={marketing}
+            jobTitle="Digital Marketing"
+            jobDetail="1.5k Jobs Available"
+          />
+          <MarketPlace img={seo} jobTitle="SEO" jobDetail="7k Jobs Available" />
+        </div>
+      </div>
+      <div className="startUp">
+        <div className="startupText">
+          <h3 className="cardJobTitle">
+            Get Starting Work With Startup Today.
+          </h3>
+          <p className="genTitleDescript">
+            Starting a business and getting it off the ground is easy if you
+            follow.
+          </p>
+        </div>
+        <div className="startupButton genNav">Start Now</div>
+      </div>
+      <div className="checkReview">
+        <div className="checkReviewBox">
+          <h1 className="genTitle reviewTitle">Check out Recent Review</h1>
+          <p className="marketplaceDescript">
+            Find the perfect freelance services for your business · Popular
+            professional services ·
+          </p>
+          <div className="recentReview">
+            <RecentReview img={male} />
+            <RecentReview img={female} />
+            <RecentReview img={singer} />
           </div>
         </div>
       </div>
-    </>
+      <div className="footerbox">
+        <div className="footerContact">
+          <div className="footerEmail genNav">
+            <p className="muradEmail">muraddc0@gmail.com</p>
+          </div>
+          <div className="footerMedia genNav">
+            <img src={footerfacebook} alt="" />
+            <img src={footertwit} alt="" />
+            <img src={footerinsta} alt="" />
+          </div>
+        </div>
+        <div className="Copyright genNav">
+          <img src={copyright} alt="" />
+          <p className="muradCopy">Copyright by Murad</p>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;

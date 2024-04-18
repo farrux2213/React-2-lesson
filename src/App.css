@@ -1,334 +1,545 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 body {
-  margin: 0%;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-.head {
-  display: flex;
-  width: 100%;
-  height: 900px;
-  position: relative;
-  background-color: bisque;
-}
-/* ?????????????????????? */
-.followers {
-  width: 60%;
-  height: 250px;
-  margin: auto;
-}
-.followers-top h1 {
   font-family: "Inter", sans-serif;
-  font-size: 42.54px;
-  font-weight: 600;
-  line-height: 51.48px;
-  text-align: center;
+  color: #0c1523;
 }
-.followers-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.K-plus-1 h1,
-.K-plus-2 h1,
-.K-plus-3 h1,
-.K-plus-4 h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 31.91px;
-  font-weight: 500;
-  line-height: 38.62px;
-  text-align: center;
-  /* align-items: center; */
-}
-.K-plus-1 p,
-.K-plus-2 p,
-.K-plus-3 p,
-.K-plus-4 p {
-  font-family: "Inter", sans-serif;
-  font-size: 13.33px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: center;
-  align-items: center;
-}
-/* end followers area  */
-.six-box {
-  width: 80%;
-  height: 1080px;
-  margin: auto;
-  position: relative;
-  top: 90px;
-  background-color: #fafbff;
-}
-.all-six-box {
+.container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin: auto;
+  width: 100%;
   position: relative;
-  top: 120px;
-  width: 80%;
-  height: 80%;
+  background-color: rgba(255, 255, 255, 1);
 }
-.first-series {
-  width: 100%;
-  height: 33%;
-  display: flex;
-  gap: 30px;
-}
-.first-series-1 {
-  width: 50%;
-  height: 100%;
-}
-.first-series-2 {
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-}
-.second-series {
-  width: 100%;
-  height: 33%;
-  display: flex;
-  gap: 30px;
-}
-.second-series-1 {
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-}
-.second-series-2 {
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-}
-.third-series {
-  width: 100%;
-  height: 33%;
-  display: flex;
-  gap: 30px;
-}
-.third-series-1 {
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-}
-.third-series-2 {
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-}
-.sunicon {
-  width: 40px;
-  height: 40px;
-  background-color: #41f5c0;
-  border-radius: 5px;
-  margin-left: 40px;
-  margin-top: 40px;
-}
-.insunicon {
-  margin-left: 11px;
-  margin-top: 11px;
-}
-.first-series-2 h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 23.94px;
-  font-weight: 500;
-  line-height: 35.91px;
-  text-align: left;
-  margin-left: 40px;
-}
-.first-series-2 p {
-  width: 325px;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-  margin-left: 40px;
-}
-.sixline {
-  position: absolute;
-  left: 480px;
-  top: 270px;
-}
-.second-series-2 h2,
-.second-series-1 h2,
-.third-series-2 h2,
-.third-series-1 h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 23.94px;
-  font-weight: 500;
-  line-height: 35.91px;
-  text-align: left;
-  margin-left: 40px;
-}
-.second-series-2 p,
-.second-series-1 p,
-.third-series-2 p,
-.third-series-1 p {
-  width: 325px;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-  margin-left: 40px;
-}
-.staricon {
-  margin-left: 11px;
-  margin-top: 11px;
-}
-.sixline2 {
-  position: absolute;
-  top: 566px;
-}
-.sixline3 {
-  position: absolute;
-  top: 566px;
-  left: 480px;
-}
-.unvonicon {
-  margin-left: 14.5px;
-  margin-top: 12.7px;
-}
-.searchicon {
-  margin-left: 11px;
-  margin-top: 11px;
-}
-.bagicon {
-  margin-left: 11px;
-  margin-top: 11px;
-}
-.sixline4 {
-  position: absolute;
-  top: 860px;
-}
-.sixline5 {
-  position: absolute;
-  top: 860px;
-  left: 480px;
-}
-.first-series-1 h1 {
-  font-family: "Inter", sans-serif;
-  width: 367px;
-  font-size: 42.54px;
-  font-weight: 600;
-  line-height: 51.48px;
-  margin-left: 40px;
-}
-.first-series-1 button {
-  width: 142px;
-  height: 49px;
-  background-color: #0c1523;
-  border-radius: 9px;
-  margin-left: 40px;
-}
-.button-p {
+.genNav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19.36px;
+}
+.genTitle {
+  font-size: 43px;
+  font-weight: 600;
+  margin: 0;
+}
+/* BG icons */
+.bgIcons {
+  display: flex;
+  width: 100%;
+  height: 0;
+}
+.mainImg {
+  position: absolute;
+  width: 935px;
+  height: 935px;
+  top: 0;
+  right: 0;
+}
+.star1 {
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  top: 122px;
+  left: 339px;
+}
+.star2 {
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  top: 431px;
+  left: 45px;
+}
+.star3 {
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  top: 644px;
+  left: 362px;
+}
+.star4 {
+  position: absolute;
+  width: 51px;
+  height: 47px;
+  top: 661px;
+  left: 71px;
+}
+.freestar1 {
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  top: 101px;
+  left: 45px;
+}
+.freestar2 {
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  top: 205px;
+  left: 99px;
+}
+.freestar3 {
+  position: absolute;
+  width: 51px;
+  height: 47px;
+  top: 798px;
+  left: 234px;
+}
+.freestar4 {
+  position: absolute;
+  width: 116px;
+  height: 107px;
+  top: 768px;
+  left: 592px;
+}
+.freestar5 {
+  position: absolute;
+  width: 102px;
+  height: 94px;
+  top: 888px;
+  left: 376px;
+}
+.avatarImg {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 527px;
+  right: 238px;
+}
+.facebook {
+  position: absolute;
+  top: 227px;
+  left: 624px;
+}
+.twitter {
+  position: absolute;
+  top: 119px;
+  left: 1149px;
+}
+.instagram {
+  position: absolute;
+  top: 677px;
+  left: 1104px;
+}
+.snapchat {
+  position: absolute;
+  top: 268px;
+  left: 1224px;
+}
+.stack {
+  position: absolute;
+  width: 180px;
+  height: 66px;
+  top: 762px;
+  left: 420px;
+}
+.drib {
+  position: absolute;
+  width: 180px;
+  height: 66px;
+  top: 762px;
+  left: 152px;
+  opacity: 50%;
+}
+.Insta {
+  position: absolute;
+  width: 180px;
+  height: 66px;
+  top: 869px;
+  left: 150px;
+}
+.behance {
+  position: absolute;
+  width: 180px;
+  height: 66px;
+  top: 869px;
+  left: 420px;
+}
+.navBox {
+  height: 90px;
+  border-bottom: 1px solid rgba(12, 21, 35, 0.1);
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.leftNav {
+  gap: 115px;
+}
+.logoBox {
+  gap: 6px;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #6d12e0, #b600e3);
+  font-size: 12px;
+  font-weight: 600;
   color: white;
 }
-/* end six box area  */
-.market {
-  width: 80%;
-  height: 990px;
-  margin: auto;
-  position: relative;
-  top: 200px;
-  border: 1px solid #fcf5ff;
+.logoName {
+  color: #a904e3;
 }
-.market h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 42.54px;
-  font-weight: 600;
-  line-height: 51.48px;
-  text-align: center;
+.navHome {
+  gap: 34px;
 }
-.market p {
-  font-family: "Inter", sans-serif;
-  width: 538px;
-  height: 54px;
-  margin-left: 320px;
+.home {
   font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: center;
+  font-weight: 600;
 }
-.marketboxex {
+.Features {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0c1523;
+}
+.rightNav {
+  gap: 25px;
+  z-index: 1;
+}
+.Login {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fafbff;
+}
+.AccountBox {
+  width: 170px;
+  height: 49px;
+  border-radius: 9px;
+  color: #0c1523;
+  background-color: #41f5c0;
+}
+.createAcc {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Hero box */
+.heroBox {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 720px;
-  margin-top: 100px;
+  width: 25%;
+  height: 975px;
+  position: relative;
+  padding-left: 150px;
 }
-.birinchi-qator {
+.hiringSmart {
+  padding-top: 100px;
+  font-size: 43px;
+  font-weight: 400;
+  margin: 0;
+}
+.reviews {
+  margin: 0;
+  font-size: 76px;
+  font-weight: 600;
+}
+.heroDescription {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.buttonBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  padding-top: 40px;
+  margin: 0;
+}
+.learnMore {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* End of hero */
+/* Statistics */
+.statistics {
+  flex-direction: column;
+  width: 60%;
+  height: 178px;
+  margin: auto;
+}
+.mainStatsBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.statsBox {
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 60px;
+}
+.statsInNumbers {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+}
+.statsTitle {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+/* Our Features */
+.ourFeaturesBox {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: #fafbff;
+  height: 1080px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 20px;
+}
+.ourFeatures {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 147px;
+  padding-right: 147px;
+}
+.column1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 144px;
+  gap: 30px;
+}
+.findTalent {
+  width: 367px;
+}
+.trybutton {
+  width: 142px;
+  height: 49px;
+  border-radius: 9px;
+  background-color: #0c1523;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+.tryforFree {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fafbff;
+}
+.featureCard {
+  height: 260px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+.featureCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: radial-gradient(circle, #41f5c0, #41f5c00d);
+}
+.greenStar {
+  padding-top: 50px;
+  padding-left: 53px;
+}
+.featureTitle {
+  padding: 15px 50px;
+  margin: 0;
+}
+.featureRev {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 50px;
+}
+.column2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 120px;
+  gap: 30px;
+}
+/* End of Our Features */
+/* Marketplace */
+.marketplace {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 120px;
+}
+.marketplaceDescript {
+  width: 50%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+}
+.row1 {
+  display: flex;
+  padding-top: 60px;
+  width: 100%;
+  margin: auto;
+}
+.row2 {
   display: flex;
   width: 100%;
-  height: 363px;
+  margin: auto;
 }
-.ikkinchi-qator {
+.graphicDesign {
   display: flex;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(186, 173, 192, 0.05);
   height: 363px;
-}
-.marketboxex1 {
-  width: 33.3%;
-  height: 100%;
-  background-color: #baadc0;
-  opacity: 5%;
-}
-.marketboxex2 {
-  width: 33.3%;
-  height: 100%;
-  border: 1px solid #fcf5ff;
+  flex: 1;
   border-radius: 5px;
+}
+.cardJobImg {
+  margin-top: 89px;
+}
+.cardJobTitle {
+  padding-top: 30px;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(12, 21, 35, 1);
+}
+.cardJobDetail {
+  padding-top: 20px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(12, 21, 35, 1, 0.7);
+}
+/* Start Up */
+.startUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding-top: 90px;
+}
+.startupText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+.genTitleDescript {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(12, 21, 35, 1);
 }
 
-.marketboxex3 {
-  width: 33.4%;
-  height: 100%;
-  background-color: #baadc0;
-  opacity: 5%;
+.startupButton {
+  width: 127px;
+  height: 49px;
+  background-color: rgba(12, 21, 35, 1);
+  border: none;
+  border-radius: 9px;
+  color: rgba(250, 251, 255, 1);
+  margin-right: 63px;
 }
-.marketboxex4 {
-  width: 33.4%;
-  height: 100%;
-  border: 1px solid #fcf5ff;
-  border-radius: 5px;
+/* End of start up */
+/* Recent review */
+.checkReview {
+  display: flex;
+  height: 898px;
+  width: 100%;
+  background-color: rgba(250, 251, 255, 1);
+  margin-top: 130px;
 }
-.marketboxex5 {
-  width: 33.3%;
-  height: 100%;
-  background-color: #baadc0;
-  opacity: 5%;
+.checkReviewBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 658px;
 }
-.marketboxex6 {
-  width: 33.3%;
-  height: 100%;
-  border: 1px solid #fcf5ff;
-  border-radius: 5px;
+.reviewTitle {
+  margin: 0;
 }
-.belgi1 {
-  width: 70px;
-  height: 70px;
-  background-color: #263959;
+.recentReview {
+  display: flex;
+  gap: 30px;
 }
-.boldtext1 b {
-  font-family: "Inter", sans-serif;
-  width: 234px;
-  font-size: 31.91px;
+.genReview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 452px;
+  border: 1px solid rgba(65, 245, 192, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  flex: 1;
+}
+.reviewStar {
+  width: 84px;
+  height: 50px;
+  border-radius: 13px;
+  border: 1px solid rgba(255, 212, 102, 1);
+  margin-top: 35px;
+}
+.reviewNum {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(248, 178, 0, 1);
+}
+.reviewDescript {
+  margin: 0;
+  padding-top: 56px;
+}
+.maleReview {
+  padding-top: 55px;
+}
+.whoseReview {
+  font-size: 18px;
   font-weight: 500;
-  line-height: 38.62px;
-  text-align: center;
-  color: black;
-  opacity: 1;
-  border: 1px solid red;
 }
-h1 {
-  font-size: 21px;
+.jobPosition {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* End of check review */
+/* Footer */
+.footerbox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footerContact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  height: 80px;
+}
+
+.muradEmail {
+  font-size: 24px;
+  font-weight: 500;
+}
+.footerMedia {
+  gap: 20px;
+}
+.Copyright {
+  gap: 15px;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(65, 245, 192, 1);
+}
+.muradCopy {
+  margin: 0;
 }

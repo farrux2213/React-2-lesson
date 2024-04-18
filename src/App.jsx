@@ -29,7 +29,7 @@ import seo from "./assets/seo.png";
 import social from "./assets/social.png";
 import talent from "./assets/talent.png";
 import ui from "./assets/ui.png";
-// import ux from "./assets/ux.png";
+import ux from "./assets/ux.png";
 import writing from "./assets/writing.png";
 import greenStar from "./assets/greenStar.png";
 
